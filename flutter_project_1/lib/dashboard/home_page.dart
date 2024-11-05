@@ -1,15 +1,13 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/login_page.dart';
+import 'package:flutter_project_1/fitur_sidebar/lihat_kompen_page.dart';
+import 'package:flutter_project_1/proses_log&res/login_page.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatefulWidget {
   final String username;
-  const HomePage({
-    super.key,
-    required this.username,
-  });
+  const HomePage({Key? key, required this.username}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -150,7 +148,10 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
-                  // TODO: Navigate to Lihat dan Pilih Kompen
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => LihatKompenPage()),
+                  );
                 },
               ),
               ListTile(

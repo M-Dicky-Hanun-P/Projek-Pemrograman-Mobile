@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/login_as.dart';
+import 'package:flutter_project_1/proses_log&res/login_as.dart';
 
 class LandingPage extends StatelessWidget {
   @override

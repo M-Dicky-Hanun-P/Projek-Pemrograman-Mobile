@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/proses_log&res/register_page.dart';
 import 'landing_page.dart';
 import 'login_as.dart';
-import 'package:flutter_project_1/home_page.dart'; // atau sesuai lokasi file HomePage
-
+import 'package:flutter_project_1/dashboard/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
     String username = _usernameController.text;
     String password = _passwordController.text;
 
-    if (username == 'mahasiswa JTI' && password == 'mahasiswa123') {
+    if (username == 'mahasiswa' && password == 'mahasiswa123') {
       // Jika berhasil, navigasi ke halaman HomePage.
       Navigator.push(
         context,
@@ -228,10 +228,14 @@ class _LoginPageState extends State<LoginPage> {
                       const Text('Belum punya akun? '),
                       TextButton(
                         onPressed: () {
-                          // TODO: Navigate to registration page
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const RegisterPage()),
+                          );
                         },
                         child: const Text(
-                          'Daftar',
+                          'Register',
                           style: TextStyle(
                             color: Colors.blue,
                           ),

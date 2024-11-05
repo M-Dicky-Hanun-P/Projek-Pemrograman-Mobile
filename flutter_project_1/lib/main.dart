@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart'; // Mengimpor paket material dari Flutter, yang menyediakan banyak widget dan tema untuk aplikasi.
-import 'landing_page.dart';
+import 'proses_log&res/landing_page.dart';
 
 void main() {
   runApp(

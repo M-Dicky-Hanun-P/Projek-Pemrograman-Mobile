@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/login_page.dart';
+import 'package:flutter_project_1/proses_log&res/login_page.dart';
 
 class LoginAs extends StatelessWidget {
   const LoginAs({super.key});
