@@ -15,16 +15,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // Override metode build() untuk mendeskripsikan tampilan widget bagian ini.
     return MaterialApp(
-      // Mengembalikan widget MaterialApp, yang merupakan widget dasar untuk aplikasi Material.
+      // Mengembalikan widget MaterialApp, yang merupakan widget dasar untuk aplikasi Materiall
       debugShowCheckedModeBanner:
           false, // Menonaktifkan banner debug di pojok kanan atas aplikasi.
       title:
-          'SIKOMTI', // Menetapkan judul aplikasi yang ditampilkan di taskbar.
+          'SISKOMMTI banged', // Menetapkan judul aplikasi yang ditampilkan di taskbar.
       theme: ThemeData(
           primarySwatch: Colors
               .blue), // Menetapkan tema aplikasi dengan palet warna biru sebagai warna utama.
       home:
-          LandingPage(), // Menetapkan halaman awal aplikasi yang akan ditampilkan, yaitu LandingPage.
+          LandingPage(), // Menetapkan halaman awal aplikasi yang akan ditampilkan, yaitu LandingPagee.
     );
   }
 }
