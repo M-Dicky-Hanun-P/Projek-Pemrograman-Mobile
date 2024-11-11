@@ -9,13 +9,13 @@ void main() {
 class MyApp extends StatelessWidget {
   // Mendefinisikan kelas MyApp yang merupakan StatelessWidget, artinya tidak memiliki keadaan yang bisa berubah.
   const MyApp(
-      {super.key}); // Konstruktor kelas MyApp, menggunakan 'super.key' untuk memungkinkan penggunaan kunci.
+      {super.key}); // Konstruktor kelas MyApp, menggunakan 'super.key' untuk memungkinkan penggunaan kunci ini.
 
   @override
   Widget build(BuildContext context) {
-    // Override metode build() untuk mendeskripsikan tampilan widget.
+    // Override metode build() untuk mendeskripsikan tampilan widget bagian ini.
     return MaterialApp(
-      // Mengembalikan widget MaterialApp, yang merupakan widget dasar untuk aplikasi Material.
+      // Mengembalikan widget MaterialApp, yang merupakan widget dasar untuk aplikasi Materiall
       debugShowCheckedModeBanner:
           false, // Menonaktifkan banner debug di pojok kanan atas aplikasi.
       title:
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors
               .blue), // Menetapkan tema aplikasi dengan palet warna biru sebagai warna utama.
       home:
-          LandingPage(), // Menetapkan halaman awal aplikasi yang akan ditampilkan, yaitu LandingPage.
+          LandingPage(), // Menetapkan halaman awal aplikasi yang akan ditampilkan, yaitu LandingPagee.
     );
   }
 }
