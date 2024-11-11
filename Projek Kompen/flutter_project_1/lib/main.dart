@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors
               .blue), // Menetapkan tema aplikasi dengan palet warna biru sebagai warna utama.
       home:
-          LandingPage(), // Menetapkan halaman awal aplikasi yang akan ditampilkan, yaitu LandingPage.
+          LandingPage(), // Menetapkan halaman awal aplikasi yang akan ditampilkan, yaitu LandingPagee.
     );
   }
 }
