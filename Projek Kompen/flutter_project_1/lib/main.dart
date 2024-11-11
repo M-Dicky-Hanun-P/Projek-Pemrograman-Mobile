@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Override metode build() untuk mendeskripsikan tampilan widget bagian ini.
+    // Override metode build() untuk mendeskripsikan tampilan widget bagian.
     return MaterialApp(
       // Mengembalikan widget MaterialApp, yang merupakan widget dasar untuk aplikasi Materiall
       debugShowCheckedModeBanner:
