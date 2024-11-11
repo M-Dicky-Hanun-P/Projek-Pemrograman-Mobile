@@ -10,6 +10,8 @@ const Map<String, dynamic> taskDetail = {
 };
 
 class UpdateTugasPage extends StatefulWidget {
+  const UpdateTugasPage({super.key});
+
   @override
   _UpdateTugasPageState createState() => _UpdateTugasPageState();
 }

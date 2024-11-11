@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner:
           false, // Menonaktifkan banner debug di pojok kanan atas aplikasi.
       title:
-          'SIKOMTI', // Menetapkan judul aplikasi yang ditampilkan di taskbar.
+          'SISKOMMTI banged', // Menetapkan judul aplikasi yang ditampilkan di taskbar.
       theme: ThemeData(
           primarySwatch: Colors
               .blue), // Menetapkan tema aplikasi dengan palet warna biru sebagai warna utama.

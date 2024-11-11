@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_project_1/proses_log&res/login_as.dart';
 
 class LandingPage extends StatelessWidget {
+  const LandingPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
