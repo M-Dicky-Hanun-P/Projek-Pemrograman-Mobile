@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_project_1/dashboard/home_page.dart';
 
 class UpdateKompenSelesai extends StatefulWidget {
+  const UpdateKompenSelesai({super.key});
+
   @override
   _UpdateKompenSelesaiState createState() => _UpdateKompenSelesaiState();
 }

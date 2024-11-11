@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_project_1/dashboard/home_page.dart';
 
 class LihatKompenPage extends StatefulWidget {
+  const LihatKompenPage({super.key});
+
   @override
   _LihatKompenPageState createState() => _LihatKompenPageState();
 }
