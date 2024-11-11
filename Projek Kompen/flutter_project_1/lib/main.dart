@@ -9,7 +9,7 @@ void main() {
 class MyApp extends StatelessWidget {
   // Mendefinisikan kelas MyApp yang merupakan StatelessWidget, artinya tidak memiliki keadaan yang bisa berubah.
   const MyApp(
-      {super.key}); // Konstruktor kelas MyApp, menggunakan 'super.key' untuk memungkinkan penggunaan kunci.
+      {super.key}); // Konstruktor kelas MyApp, menggunakan 'super.key' untuk memungkinkan penggunaan kunci ini.
 
   @override
   Widget build(BuildContext context) {
