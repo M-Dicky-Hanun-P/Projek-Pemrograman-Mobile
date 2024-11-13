@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Override metode build() untuk mendeskripsikan tampilan widget bagian build ini...
+    // Override metode build() untuk mendeskripsikan tampilan widget bagian build ini.
     return MaterialApp(
       // Mengembalikan widget MaterialApp, yang merupakan widget dasar untuk aplikasi Materiall
       debugShowCheckedModeBanner:
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors
               .blue), // Menetapkan tema aplikasi dengan palet warna biru sebagai warna utama.
       home:
-          LandingPage(), // Menetapkan halaman awal aplikasi yang akan ditampilkan, yaitu LandingPagee.
+          const LandingPage(), // Menetapkan halaman awal aplikasi yang akan ditampilkan, yaitu LandingPagee.
     );
   }
 }

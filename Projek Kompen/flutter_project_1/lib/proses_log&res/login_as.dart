@@ -29,7 +29,7 @@ class LoginAs extends StatelessWidget {
         children: [
           SafeArea(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 40),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -47,30 +47,76 @@ class LoginAs extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      // _buildLoginButton(
-                      //   context,
-                      //   label: 'Admin',
-                      //   icon: Icons.admin_panel_settings,
-                      //   onPressed: () {
-                      //     Navigator.push(
-                      //       context,
-                      //       MaterialPageRoute(
-                      //           builder: (context) => const LoginPage()),
-                      //     );
-                      //   },
-                      // ),
-                      // _buildLoginButton(
-                      //   context,
-                      //   label: 'Dosen/Karyawan',
-                      //   icon: Icons.school,
-                      //   onPressed: () {
-                      //     Navigator.push(
-                      //       context,
-                      //       MaterialPageRoute(
-                      //           builder: (context) => const LoginPage()),
-                      //     );
-                      //   },
-                      // ),
+                      _buildLoginButton(
+                        context,
+                        label: 'Admin',
+                        icon: Icons.admin_panel_settings,
+                        onPressed: () {
+                          // Menampilkan Dialog
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                      30), // Membuat sudut lebih bulat
+                                ),
+                                elevation: 10,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: <Widget>[
+                                      const Icon(
+                                        Icons.warning_amber_outlined,
+                                        color: Colors.orange,
+                                        size: 60,
+                                      ),
+                                      const SizedBox(height: 16),
+                                      const Text(
+                                        'Notifikasi',
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 12),
+                                      const Text(
+                                        "Aplikasi ini hanya digunakan untuk mahasiswa",
+                                        style: TextStyle(fontSize: 16),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      const SizedBox(height: 24),
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop();
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor:
+                                              Colors.orange, // Warna tombol
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(30),
+                                          ),
+                                        ),
+                                        child: const Text(
+                                          'Tutup',
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                            color: Color.fromARGB(
+                                                255, 245, 245, 245),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                          );
+                        },
+                      ),
                       _buildLoginButton(
                         context,
                         label: 'Mahasiswa',
@@ -80,6 +126,76 @@ class LoginAs extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const LoginPage()),
+                          );
+                        },
+                      ),
+                      _buildLoginButton(
+                        context,
+                        label: 'Dosen/Karyawan',
+                        icon: Icons.school,
+                        onPressed: () {
+                          // Menampilkan Dialog
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                      30), // Membuat sudut lebih bulat
+                                ),
+                                elevation: 10,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: <Widget>[
+                                      const Icon(
+                                        Icons.warning_amber_outlined,
+                                        color: Colors.orange,
+                                        size: 60,
+                                      ),
+                                      const SizedBox(height: 16),
+                                      const Text(
+                                        'Notifikasi',
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 12),
+                                      const Text(
+                                        "Aplikasi ini hanya digunakan untuk mahasiswa",
+                                        style: TextStyle(fontSize: 16),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      const SizedBox(height: 24),
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop();
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor:
+                                              Colors.orange, // Warna tombol
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(30),
+                                          ),
+                                        ),
+                                        child: const Text(
+                                          'Tutup',
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                            color: Color.fromARGB(
+                                                255, 245, 245, 245),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
                           );
                         },
                       ),

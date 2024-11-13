@@ -13,9 +13,5 @@ class _UpdateKompenSelesaiState extends State<UpdateKompenSelesai> {
   Widget build(BuildContext context) {
     // TODO: implement build
     throw UnimplementedError();
-
-    // trial by adel
-    // trial by mdhp
   }
-
 }

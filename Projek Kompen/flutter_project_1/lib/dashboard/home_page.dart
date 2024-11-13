@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_project_1/fitur_sidebar/lihat_kompen_page.dart';
 import 'package:flutter_project_1/fitur_sidebar/update_tugas.dart';
 import 'package:flutter_project_1/proses_log&res/login_page.dart';
+import 'package:flutter_project_1/fitur_sidebar/upload_berita_acara/upload_berkas_berita_acara.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -139,7 +140,7 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
-                  Navigator.pop(context); // Close the drawer
+                  Navigator.pop(context);
                 },
               ),
               ListTile(
@@ -151,7 +152,7 @@ class _HomePageState extends State<HomePage> {
                 onTap: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => LihatKompenPage()),
+                    MaterialPageRoute(builder: (context) => const LihatKompenPage()),
                   );
                 },
               ),
@@ -164,7 +165,7 @@ class _HomePageState extends State<HomePage> {
                 onTap: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => UpdateTugasPage()),
+                    MaterialPageRoute(builder: (context) => const UpdateTugasPage()),
                   );
                 },
               ),
@@ -175,7 +176,10 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
-                  // TODO: Navigate to Update Kompen
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => UploadBerkasBeritaAcara()),
+                  );
                 },
               ),
               const Spacer(),
@@ -212,7 +216,7 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
             color: Colors.green,
             child: Text(
-              'Selamat datang mahasiswa ${widget.username}',
+              'Selamat datang ${widget.username}',
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 14,
