@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/fitur_sidebar/lihat_kompen_page.dart';
-import 'package:flutter_project_1/fitur_sidebar/update_tugas.dart';
+import 'package:flutter_project_1/fitur_sidebar/lihat_dan_pilih_kompen/lihat_kompen_page.dart';
+import 'package:flutter_project_1/fitur_sidebar/update_progres_tugas_kompen/update_progres_tugas_kompen.dart';
 import 'package:flutter_project_1/proses_log&res/login_page.dart';
 import 'package:flutter_project_1/fitur_sidebar/upload_berita_acara/upload_berkas_berita_acara.dart';
 import 'package:image_picker/image_picker.dart';
@@ -184,7 +184,7 @@ class _HomePageState extends State<HomePage> {
               ),
               const Spacer(),
               Padding(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(20),
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.pushReplacement(
@@ -197,7 +197,7 @@ class _HomePageState extends State<HomePage> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.red,
                     foregroundColor: Colors.white,
-                    minimumSize: const Size(double.infinity, 40),
+                    minimumSize: const Size(100, 40),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
