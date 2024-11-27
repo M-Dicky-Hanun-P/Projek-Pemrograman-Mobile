@@ -6,10 +6,10 @@ class DetailTugasYangTersediaPage extends StatelessWidget {
   final Map<String, dynamic> task;
 
   const DetailTugasYangTersediaPage({
-    Key? key,
+    super.key,
     required this.onStatusChanged,
     required this.task,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

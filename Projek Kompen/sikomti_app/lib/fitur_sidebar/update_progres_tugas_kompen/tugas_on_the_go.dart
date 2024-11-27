@@ -3,7 +3,7 @@ import 'package:sikomti_app/dashboard/home_page.dart';
 import 'package:sikomti_app/fitur_sidebar/update_progres_tugas_kompen/upload_progress.dart';
 
 class TugasOnTheGo extends StatelessWidget {
-  const TugasOnTheGo({Key? key}) : super(key: key);
+  const TugasOnTheGo({super.key});
 
   @override
   Widget build(BuildContext context) {

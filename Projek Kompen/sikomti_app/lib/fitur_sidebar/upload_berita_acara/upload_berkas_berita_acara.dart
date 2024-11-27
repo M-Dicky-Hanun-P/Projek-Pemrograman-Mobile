@@ -5,6 +5,8 @@ import 'package:path/path.dart' as path;
 import 'package:sikomti_app/dashboard/home_page.dart';
 
 class UploadBerkasBeritaAcara extends StatefulWidget {
+  const UploadBerkasBeritaAcara({super.key});
+
   @override
   _UploadBerkasBeritaAcaraState createState() =>
       _UploadBerkasBeritaAcaraState();
