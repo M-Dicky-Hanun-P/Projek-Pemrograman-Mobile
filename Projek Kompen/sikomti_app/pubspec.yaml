@@ -16,6 +16,7 @@ dependencies:
   file_picker: ^5.0.0
   path: ^1.8.0
   percent_indicator: ^4.2.3
+  http: ^1.2.2
   
 
 dev_dependencies:

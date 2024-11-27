@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:sikomti_app/proses_log&res/login_as.dart';
 
 class LandingPage extends StatefulWidget {
-  const LandingPage({Key? key}) : super(key: key);
+  const LandingPage({super.key});
 
   @override
   _LandingPageState createState() => _LandingPageState();
