@@ -1,0 +1,32 @@
+name: sikomti_app
+description: "App for mobile and the title is Compensation System of Information Technology Department of Malang State Polytechnic."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  image_picker: ^1.1.2
+  shared_preferences: ^2.3.2
+  file_picker: ^5.0.0
+  path: ^1.8.0
+  percent_indicator: ^4.2.3
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/img/logo_jti_polinema.png
+    - assets/img/profil1.jpg
+    - assets/img/SIKOMTI.png
